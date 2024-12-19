@@ -1,0 +1,48 @@
+.todoitems {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px; /* Adjusted padding for better spacing */
+    align-items: center;
+    border: 1px solid #e0e0e0; /* Subtle border for separation */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    background-color: #f9f9f9; /* Light background for contrast */
+    margin-bottom: 10px; /* Spacing between items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Smooth hover effect */
+    margin-top: 20px;
+}
+
+.todoitems:hover {
+    background-color: #f1f1f1; /* Slightly darker background on hover */
+    transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.todoitems-container {
+    display: flex;
+    align-items: center; /* Align icons and text vertically */
+}
+
+.todositems-text {
+    padding-left: 16px;
+    color: #333; /* Slightly darker text for readability */
+    font-size: 20px; /* Adjusted font size */
+    font-weight: 500; /* Medium weight for better visibility */
+    text-overflow: ellipsis; /* Handle long text gracefully */
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 240px; /* Limit text width */
+}
+
+.todoitems-cross {
+    cursor: pointer;
+    padding-right: 16px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.8; /* Slightly transparent */
+    transition: opacity 0.2s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.todoitems-cross:hover {
+    opacity: 1; /* Fully visible on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}

@@ -1,0 +1,82 @@
+.todo {
+    width: 600px;
+    min-height: 700px;
+    border-radius: 20px;
+    background: #ffffff;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.todo:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.todo-header {
+    margin-top: 64px; /* Reduced margin for better balance */
+    color: #002765;
+    font-size: 38px; /* Slightly larger font size */
+    font-weight: 700; /* Bolder font for emphasis */
+    text-align: center; /* Center-align the header */
+    letter-spacing: 1px; /* Slight letter spacing for better readability */
+    line-height: 1.2; /* Adjusted line height */
+}
+
+.todo-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* Balanced margin for better spacing */
+    gap: 15px; /* Replace fixed margin-left for better responsiveness */
+}
+
+.todoinput {
+    border-radius: 50px;
+    background: #f3f4f6; /* Softer background color */
+    border: 1px solid #ddd; /* Light border for definition */
+    outline: none;
+    width: 100%; /* Responsive width */
+    max-width: 480px; /* Constrain input size */
+    height: 60px; /* Slightly reduced height for balance */
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333; /* Darker text color for better readability */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.todoinput:focus {
+    background: #ffffff; /* Bright background on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue outline for focus */
+}
+
+.addbtn {
+    border-radius: 50px;
+    background: #ff6739;
+    width: 160px; /* Reduced button width */
+    height: 60px; /* Reduced button height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px; /* Adjusted font size */
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(255, 103, 57, 0.3); /* Button shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.addbtn:hover {
+    background: #ff4a1d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.addbtn:active {
+    transform: scale(0.98); /* Pressed state */
+    box-shadow: 0 2px 4px rgba(255, 103, 57, 0.2); /* Reduced shadow */
+}
